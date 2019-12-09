@@ -127,24 +127,27 @@ function TableComponent(props) {
   const columns = React.useMemo(
     () => [
       {
-        Header: 'User Details',
+        Header: 'Testing Details',
         columns: [
           {
-            Header: 'Name',
-            accessor: 'name',
+            Header: 'Test Suite Name',
+            accessor: 'testSuiteName',
           },
           {
-            Header: 'Email',
-            accessor: 'email',
+            Header: 'Test Case Name',
+            accessor: 'testCaseName',
           },
           {
-            Header: 'Phone',
-            accessor: 'phone',
+            Header: 'Status',
+            accessor: 'status',
           },
           {
-            Header: 'User-Name',
-            accessor: 'username',
-          },
+            Header: 'Date Time',
+            accessor: 'dateTime',
+          }, {
+            Header: 'Test Case Logs',
+            accessor: 'testCaseLogs',
+          }
         ],
       },
     ],
