@@ -122,7 +122,12 @@ function Table({ columns, data }) {
 }
 
 
-
+// {name: "Admission"},
+// {name: "Registration"},
+// {name: "Financial Aid"},
+// {name: "Information Technology"},
+// {name: "Health Services"},
+// {name: " Housing"},
 function TableComponent(props) {
   const columns = React.useMemo(
     () => [
@@ -157,7 +162,8 @@ function TableComponent(props) {
 //   const data = React.useMemo(() => makeData(100000), [])
 
   return (
-      <Table columns={columns} data={props.data}/>
+      // <Table columns={columns} data={props.data}/>
+      <div>hi there</div>
   )
 }
 
